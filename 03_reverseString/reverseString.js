@@ -6,14 +6,14 @@ const reverseString = function (theString) {
    // the result will be an array and then reverse the array
    const reversedArray = splittedString.reverse();
 
-   // join the array to build the string
+   // join the reversed array to build the reversed string
    const reversedString = reversedArray.join('');
 
    // and return the reversed string
    return reversedString;
 };
 
-//console.log(reverseString('Hello'));
+//console.log(reverseString('hello there'));
 
 // Do not edit below this line
 module.exports = reverseString;
