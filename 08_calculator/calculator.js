@@ -24,7 +24,10 @@ const multiply = function (nums) {
    return result;
 };
 
-const power = function () {};
+const power = function (num, power) {
+   /* if (power === 3) return num * num * num; */
+   return Math.pow(num, power);
+};
 
 const factorial = function () {};
 
