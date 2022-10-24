@@ -29,7 +29,29 @@ const power = function (num, power) {
    return Math.pow(num, power);
 };
 
-const factorial = function () {};
+const factorial = function (num) {
+   // my own way
+   if (num === 0 || num === 1) return 1;
+
+   let res = [];
+   for (let i = 1; i <= num; i++) {
+      res.push(i);
+   }
+
+   let finalRes = res.reduce((prev, cur) => {
+      return prev * cur;
+   });
+
+   return finalRes;
+
+   /*  // the most efficient way on the internet
+   if (num === 0 || num === 1) return 1;
+   
+   for (let i = num - 1; i >= 1; i--) {
+      num = num * i;
+   }
+   return num; */
+};
 
 // Do not edit below this line
 module.exports = {
