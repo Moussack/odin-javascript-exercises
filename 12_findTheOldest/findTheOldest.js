@@ -37,6 +37,8 @@ const findTheOldest = function (people) {
    //console.log(`sorted :`, sorted);
    if (sorted[0].yol > sorted[1].yol) return sorted[0];
    return sorted[1];
+
+   // done it for hours, lesson : do the different test cases with one solution, dont assume all test cases are the same
 };
 
 // Do not edit below this line
